@@ -1,4 +1,4 @@
-# desafio
+# Desafio Compass Uol
 
 ## Build Setup
 
@@ -15,6 +15,9 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+#run tests
+$ npm test
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
