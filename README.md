@@ -4,17 +4,23 @@
 
 As tecnologias utilizadas para o desenvolvimento deste projeto foram:
 
-## Nuxtjs
-## GraphQL
-## TailwindCSS
+<ul>
+  <li>NuxtJs</li>
+  <li>API GraphQL</li>
+  <li>TailwindCSS</li>
+</ul>
 
 Para gerenciamento de estado global foi utilizado: 
 
-## Vuex
+<ul>
+  <li>Vuex</li>
+</ul>
 
 Para persistência de dados:
 
-## vuex-persist
+<ul>
+  <li>vuex-persist</li>
+</ul>
 
 
 ## Build Setup
