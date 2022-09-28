@@ -22,27 +22,26 @@
                     </div>
             </nuxt-link>
         </div>
+
+        <IndexFooter />
     </div>
 </template>
 
 <script>
     import gql from 'graphql-tag';
+import IndexFooter from './indexFooter.vue';
 
     export default {
-
-        data() {
-            return {
-                page: 'contentPage',
-                contentId: ''
-            }
-        },
-
-        created() {
-
-        },
-
-        apollo: {
-                contents: gql ` 
+    data() {
+        return {
+            page: "contentPage",
+            contentId: ""
+        };
+    },
+    created() {
+    },
+    apollo: {
+        contents: gql ` 
                 query getAllContents {
                     contents {
                         id
@@ -55,19 +54,17 @@
                         url
                     }
                 }`,
-                 
-            },    
-
-            methods: {
-            getId(id) {
-                this.contentId = id
-                console.log(this.contentId)
-                if(this.contentId != this.$store.state.content.id) {
-                    this.$store.commit('getId', this.contentId)
-                    window.location.reload()
-                }
-                
-            },
+    },
+    methods: {
+        getId(id) {
+            this.contentId = id;
+            console.log(this.contentId);
+            if (this.contentId != this.$store.state.content.id) {
+                this.$store.commit("getId", this.contentId);
+                window.location.reload();
+            }
         },
-    }
+    },
+    components: { IndexFooter }
+}
 </script>

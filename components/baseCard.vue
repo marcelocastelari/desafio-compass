@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-
+        <IndexFooter />
     </div>
 
 </template>
@@ -50,10 +50,11 @@
 
 import gql from 'graphql-tag';
 import Icon from '../components/Icon/indexIcon.vue'
+import IndexFooter from './indexFooter.vue';
 
 export default {
 
-    components: { Icon },
+    components: { Icon, IndexFooter },
 
     data() {
         return {
