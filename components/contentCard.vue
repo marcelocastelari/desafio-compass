@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto overflow-hidden">
         <h2 class="bg-green-400 font-bold text-white px-3 py-2">Todos os conteúdos</h2>
         <div class="mb-8 space-y-1.5">
             <nuxt-link :to="{name:page, params: { contentId }}">

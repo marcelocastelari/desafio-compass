@@ -1,16 +1,16 @@
 <template>
-    <div class="relative items-top justify-center min-h-screen bg-gray-50 sm:pt-0">
-        <IndexHeader />
-            <BaseCard class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 m-8 lg:m-16" />
-        </div>
+    <div class="relative items-top justify-center min-h-screen bg-gray-50 sm:pt-0 overflow-x-hidden">
+        <IndexHeader/>
+        <BaseCard class="" />
+    </div>
 </template>
 
 <script>
-import IndexHeader from './indexHeader.vue';
 import BaseCard from './baseCard.vue';
+import IndexHeader from './indexHeader.vue';
 
     export default {
-    components: { IndexHeader, BaseCard },
+    components: { BaseCard, IndexHeader },
 
     
     data() {
