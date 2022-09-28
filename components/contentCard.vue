@@ -7,11 +7,11 @@
             v-for="content in contents" :key="content.id"
             @click="getId(content.id)"
             >
-            <h1 class="font-medium flex justify-center mt-3" v-if="content.title.length<50">
+            <h1 class="font-medium flex justify-center mt-3" v-if="content.title.length<40">
                 {{ content.title }}
             </h1>
             <h1 class="font-medium flex justify-center mt-3" v-else>
-                {{ content.title.substring(0,60)+".." }}
+                {{ content.title.substring(0,50)+".." }}
             </h1>
                 <div class=""> 
                             <button class="bg-green-400 p-2 text-white rounded focus:outline-none"
