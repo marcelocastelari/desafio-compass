@@ -3,7 +3,7 @@
         <h2 class="bg-green-400 font-bold text-white px-3 py-2">Todos os conteúdos</h2>
         <div class="mb-8 space-y-1.5">
             <nuxt-link class="focus:outline-none" :to="{name:page, params: { contentId }}">
-            <div class="flex justify-between items-center space-x-4 h-14 bg-gray-100 px-3 py-auto rounded-md m-7"
+            <div class="flex justify-between items-center space-x-4 h-auto md:h-14 lg:h-16 bg-gray-100 px-3 py-auto rounded-md m-7"
             v-for="content in contents" :key="content.id"
             @click="getId(content.id)"
             >
