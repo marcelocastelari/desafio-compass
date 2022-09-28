@@ -2,15 +2,19 @@
     <div class="max-w-7xl mx-auto overflow-hidden">
         <h2 class="bg-green-400 font-bold text-white px-3 py-2">Todos os conteúdos</h2>
         <div class="mb-8 space-y-1.5">
-            <nuxt-link :to="{name:page, params: { contentId }}">
-            <div class="flex justify-between items-center space-x-4 h-14 bg-gray-100 px-3 py-2 rounded-md m-5"
+            <nuxt-link class="focus:outline-none" :to="{name:page, params: { contentId }}">
+            <div class="flex justify-between items-center space-x-4 h-14 bg-gray-100 px-3 py-2 rounded-md m-7"
             v-for="content in contents" :key="content.id"
             @click="getId(content.id)"
             >
+            <h1 class="font-medium flex justify-center mt-3" v-if="content.title.length<50">
                 {{ content.title }}
+            </h1>
+            <h1 class="font-medium flex justify-center mt-3" v-else>
+                {{ content.title.substring(0,60)+".." }}
+            </h1>
                 <div class=""> 
-                            <button class="bg-green-400 p-2 text-white rounded"
-                               
+                            <button class="bg-green-400 p-2 text-white rounded focus:outline-none"
                             >
                                 Acessar
                             </button>
