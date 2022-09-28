@@ -29,11 +29,12 @@
                                 {{ content.description.substring(0,135)+"..." }}
                             </div>
 
-                        </div>
-                        <div class="flex items-center justify-center mt-auto px-4 h-12 border-t border-gray-300">
-                            <div class="flex mt-3">
-                                <button
-                                    class="flex justify-center items-center rounded bg-green-400 text-white w-24 p-2">Acessar</button>
+                            <div class="flex items-center justify-center mt-auto px-4 h-12 border-t border-gray-300">
+                                <div class="flex justify-center items-center mt-3">
+                                    <span
+                                        class=" flex absolute bottom-4 justify-center items-center rounded bg-green-400 text-white w-24 p-2">Acessar
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </nuxt-link>
